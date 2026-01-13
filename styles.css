@@ -1,0 +1,248 @@
+:root {
+    --White: hsl(255, 100%, 100%);
+    --Green400: hsl(176, 50%, 47%);
+    --Green700: hsl(176, 72%, 28%);
+    --Black: hsl(0, 0%, 0%);
+    --Gray500: hsl(0, 0%, 48%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Commissioner", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Commissioner", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f2f2;
+}
+
+.modal {
+    display: none;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+.page-container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.jumbotron {
+    background-image: url("./images/image-hero-desktop.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    padding: 32px 16px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--White);
+}
+
+.body-page {
+    width: 45%;
+    margin: auto;
+    position: relative;
+}
+
+.logo-mastercraft {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -78px;
+    z-index: 4;
+}
+
+.mastercraft {
+    text-align: center;
+    background-color: var(--White);
+    border-radius: 10px;
+    border: solid 1px #e6e6e6;
+    position: relative;
+    top: -50px;
+    padding: 48px 36px;
+}
+
+.mastercraft p {
+    color: var(--Gray500);
+}
+
+.project-bookmark {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 0 12px 0 0;
+}
+
+.bookmark img {
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.project-bookmark button {
+    background-color: #3CB4AB;
+    color: var(--White);
+    border-radius: 24px;
+    border: none;
+    width: 150px;
+}
+
+.stats-container {
+    background-color: var(--White);
+    padding: 42px 36px;
+    border-radius: 10px;
+    border: solid 1px #e6e6e6;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.column {
+    position: relative;
+    width: 33%;
+}
+
+.column p {
+    color: var(--Gray500);
+    opacity: 0.5;
+}
+
+.vertical-line {
+    height: 70px;
+    width: 1px;
+    background-color: var(--Gray500);
+    opacity: 0.5;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+.green-line {
+    margin: auto;
+    height: 12px;
+    border-radius: 6px;
+    display: flex;
+}
+
+.green {
+    width: 70%;
+    height: 12px;
+    background-color: var(--Green400);
+    border-radius: 6px;
+}
+
+.gray {
+    width: 30%;
+    height: 12px;
+    background-color: var(--Gray500);
+    opacity: 0.1;
+    border-radius: 6px;
+}
+
+.about-this-project {
+    background-color: var(--White);
+    padding: 42px 36px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: solid 1px #e6e6e6;
+}
+
+.about-this-project p {
+    color: var(--Gray500);
+    opacity: 0.5;
+    line-height: 1.75;
+}
+
+.project-card {
+    border-radius: 12px;
+    border: solid 1px #e6e6e6;
+    padding: 32px 42px;
+    margin: 32px 0;
+}
+
+.project-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-card-row h4 {
+    color: var(--Green400);
+    font-weight: 400;
+}
+
+.project-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card-bottom-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-card-bottom-row span {
+    font-size: 28px;
+}
+
+.project-card-bottom-row p {
+    margin: 0;
+}
+
+.btn {
+    background-color: var(--Green400);
+    color: var(--White);
+    border-radius: 24px;
+    border: none;
+    width: 150px;
+}
+
+.disabled {
+    background-color: var(--Gray500);
+    opacity: 0.25;
+}
